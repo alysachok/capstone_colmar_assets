@@ -1,20 +1,38 @@
-body {
-    width: 100%;
-}
-
-.logo_contaner_mobile {
+.logo_contaner_mobile,
+.mobile_img,
+.courses_mobile {
     display: none;
 }
 
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(68, 67, 67);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/* Header section */
 .header {
     height: 4rem;
     display: flex;
     justify-content: space-between;
-    margin: auto 24px;
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: auto 1.5px;
     align-items: center;
-    font-size: 24px;
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 .logo_contaner {
@@ -42,9 +60,267 @@ li {
     padding-left: 1rem;
 }
 
+/* Join section */
+.join_contaner {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.join_img {
+    width: 60%;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.join_text_contaner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    text-align: left;
+}
+
+.join_button {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(68, 67, 67);;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: none;
+}
+
+/* Practicing section */
+.practicing_contaner {
+    display: flex;  
+    padding-bottom: 2rem;
+}
+
+.practicing_text_contaner {
+    padding-top: 1rem;
+}
+
+.practicing_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding-left: 1rem;
+}
+
+.practicing_left_contaner {
+    display: flex;
+    padding: 1rem 1rem 1rem 1rem;
+    border: 1mm solid lightgray;
+
+}
+
+.practicing_img_contaner {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.practicing_header {
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.color {
+    background-color:lightgray;
+}
+
+/* Courses section */
+.learning_contaner {
+    display:flex;
+    flex-direction: column;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.courses_contaner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.course_img {
+    width: 100%;
+}
+
+.course {
+    background-color: white;
+}
+
+.course_description {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+/* Thesis section */
+.thesis_main_contaner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0 2rem 1.5rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.thesis_contaner {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    column-gap: 1.5rem;
+    padding-left: 1.5rem;
+    width: 100%;
+    margin-left: 1.5rem;
+}
+video {
+    width:100%;
+    padding-bottom: 1.5rem;
+}
+
+.video_contaner {
+    text-align: left;
+}
+
+.thesis_left_contaner {
+    display: flex;
+    flex-direction: column;
+}
+
+.thesis_left_info {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    text-align: left;
+}
+
+.thesis_img {
+    width: 35%;
+    height: auto;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+/* Footer section */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
     .logo_contaner,
-    .main_menu {
+    .main_menu,
+    .desktop_img,
+    .practicing_img_contaner, 
+    .courses_contaner,
+    .thesis_left_contaner,
+    .undervideo_text,
+    .term_privacy {
         display: none;
+    }
+
+    .logo_contaner_mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    /* Join section */
+    .join_contaner {
+        flex-direction: column;
+    }
+
+    .join_img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .join_text_contaner {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+    /* Practicing section */
+    .practicing_contaner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .practicing_info {
+        width: 100%;
+    }
+
+    .mobile_img {
+        display: block;
+        width: 100%;
+    }
+
+    .practicing_left_contaner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .color {
+        background-color:white;
+    }
+
+    /* Courses section */
+    .courses_mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem 1rem 1rem;
+        width: 100%;
+    }
+
+    .learning_contaner {
+        background-color: white;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+    .course_mobile {
+        background-color: lightgray;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Thesis section */
+    .thesis_contaner {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .thesis_main_contaner {
+        padding: 0;
+        width: 100%;
+    }
+
+    video {
+        padding: 1rem;
     }
 }
